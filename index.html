@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-language" content="ja">
+
+
+  <!-- Custom Dimension Settings -->
+  <script>
+    var dataLayer = dataLayer || [];
+    dataLayer.push({
+    'loginStatus': 'ログイン',
+    
+    'userID': '00039042',
+    'registDatetime': '20190401145713',
+    
+    'userType': 'normal'
+    });
+  </script>
+  <!-- End Custom Dimension Settings -->
+    
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PK78ZC3');</script>
+  <!-- End Google Tag Manager -->
+
+  <title>GA4 の実験</title>
+  <link rel="stylesheet" href="css/app.css">
+
+
+
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK78ZC3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav id="menu">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="register.html">会員登録</a></li>
+  </ul>
+</nav>
+
+
+<div id="content">
+  <hr>
+  <p><a href="download-pdf.pdf">PDF をダウンロードする></a></p>
+
+  <hr>
+
+  <p>
+    <a href="http://example.com/" target="blank" onclick="
+      dataLayer.push({
+        'event': 'ga_event',
+        'ga_ev_category': 'banner',
+        'ga_ev_action': 'click',
+        'ga_ev_label': 'banner-1'
+      });">
+      <img src="./image/banner.png" width="250" onload="
+        dataLayer.push({
+          'event': 'ga_event',
+          'ga_ev_category': 'banner',
+          'ga_ev_action': 'impression',
+          'ga_ev_label': 'banner-1'
+        });">
+    </a>
+  </p>
+
+</div>
+
+</body>
+</html>
